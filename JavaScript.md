@@ -56,7 +56,20 @@ isLeader==true ? 0 : console.log(price+100);
 ```
  ## Module -18.5 Concept of Array
  ### 1.Array  {kind of tool box differnt type element store}
- #### * arry.length , arry.includes(4) ,arry.indexOf(4) ,arry.join("|"),arry.concat(arry1) , arry.slice(2,4), arry.splice(5,2) 
+ #### * arry.length , arry.includes(4) ,arry.indexOf(4) ,arry.join("|"), arry.concat(arry1) , arry.slice(2,4), arry.splice(5,2) 
+ ```js
+
+  const arry = [2,3,5,1,6,7,4,2]
+const arry1 = [2,3,5,1,6,7,4,2]
+console.log(arry.length);
+console.log(arry.includes(4)); //array search return true or false
+console.log(arry.indexOf(4)); // get this value
+console.log(arry.join("|")); //each element add this symbol
+console.log(arry.concat(arry1)); //two array element add new total arry 
+console.log(arry.slice(2,6)); //index 2 to 6 all element cut
+console.log(arry.splice(4,2)); // 4 index to how much remove element(2)
+
+ ```
 
 
 ## Module -19 Concept of loop :
