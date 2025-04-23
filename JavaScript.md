@@ -54,7 +54,35 @@ console.log(price);
 //ternary
 isLeader==true ? 0 : console.log(price+100);
 ```
+ ## Module -18.5 Concept of Array
+ ### 1.Array  {kind of tool box differnt type element store}
+ #### * arry.length , arry.includes(4) ,arry.indexOf(4) ,arry.join("|"),arry.concat(arry1) , arry.slice(2,4), arry.splice(5,2) 
 
+
+## Module -19 Concept of loop :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 #### $\textcolor{orange}{ Var\ :\}$
 var is function or global scope and is hoisted to the top of its scope.
