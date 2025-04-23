@@ -39,7 +39,7 @@ if(price>=5000){
 }else{
   console.log(price); 
 }
-``
+```
 ### 3. Ternary Operator: (condition ? do something when true : do something false;
 #### if(!isLeader) //false return
 ```js
