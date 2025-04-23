@@ -1,6 +1,6 @@
 # $\textcolor{yellow}{ JavaScript\ .\}$
 
-### $\textcolor{yellow}{ Variable\ Type\ :\}$
+### JavaScript created by Brendan Eich only 10 Days,High level language
 
 
 #### $\textcolor{orange}{ Var\ :\}$
