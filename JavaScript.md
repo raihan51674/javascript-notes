@@ -5,6 +5,15 @@
 ### 1. JavaScript created by Brendan Eich only 10 Days,High level language,pretty mush everything else
 ### 2.Variable,error(undefined,NaN,null,)  special type:conveter { parseInt(x),parseFloat(x) , Number(x)} and { total.toFixed(2) }
 ### 3.Methmathical operation (+,-,*,/,%) and (+=,-=, *=)
+```js
+const rand=Math.round(Math.random()*10);
+console.log(rand);
+const min =Math.min(23,45,17,8,)
+console.log(Math.abs(-88));
+console.log(Math.round(3.54));
+console.log(Math.floor(2.995));
+console.log(Math.ceil(4.001));
+```
 
 # Module-18 Concept of Conditions :
 
@@ -222,6 +231,34 @@ console.log(sent);
 
 ```
 ## 22. Simple Problem-1
+### 1.conveter inch to feet:
+```js
+function InchiToFeetConveter(inch){
+  const Feet = inch /12;
+  const feetInt = parseInt(Feet);
+  const InchInt = inch %12;
+  const result = feetInt +  " fit" + " " + InchInt + " inch" ;
+  return result;
+}
+const result =InchiToFeetConveter(75);
+console.log(result);
+```
+### 2.Remove Duplicated Item :
+```js
+function DublicateRemove(array){
+  let unique=[]
+  for(const item of array){
+    if(unique.includes(item)=== false){
+      unique.push(item)
+    }
+  }
+  return unique;
+}
+const data =["abul","kabul","cabul","abul","ebul","kabul","cabul"]
+const result=DublicateRemove(data);
+console.log(result);
+
+```
 
 
 
