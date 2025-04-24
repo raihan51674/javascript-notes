@@ -177,7 +177,7 @@ for(const prop in person){ //for in use only object
   console.log(person[prop]); //show value
 }
 ```
-## Function : function name (p){} and name(); Recipe Details,
+##21. Function : function name (p){} and name(); Recipe Details,
 #### a block of code ,a set of statements
 ### 1.Parameter and Argument :
 ```js
