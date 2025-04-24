@@ -110,6 +110,45 @@ for(let i=1; i<10; i++){
 }
 
 ```
+## Module-20 String & Objects :
+
+### 1.String Compare : school.toLowerCase() , toUpperCase() , trim() and split(' ,') , reverse() , join("@")
+```js
+const drink ="this water";
+ const liquid ="  this water"
+ if(drink=== liquid.trim()){
+  console.log("milce");
+ }else{
+  console.log("mele nai");
+ }
+```
+### 2. Object : student explain,
+```js
+const person ={
+  profession : "Developer",
+  salary : 2500,
+  maried : false,
+  places : ["cox","sajek","radison"],
+  unique :{
+    color : "blue",
+    result :{
+      gpa : 5,
+    }
+  }
+}
+person.salary = 3000; //update
+delete person.maried; //delete
+console.log(person["places"]);
+console.log(person.places[2]);
+console.log(person.unique.color);
+console.log(person.unique.result.gpa);
+console.log(Object.keys(person)); //show porparty
+console.log(Object.values(person)); //all value 
+for(const prop in person){ //for in use only object
+  console.log(prop); //show key
+  console.log(person[prop]); //show value
+}
+```
 
 
 
