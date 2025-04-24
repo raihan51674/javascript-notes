@@ -268,6 +268,57 @@ a = b;
 b = temp ;
 console.log(a,b);
 ```
+### 4.Max value
+```js
+function getMax(number){
+  let max =number[0];
+  for(const value of number){
+    if(value > max){
+      max = value
+    }
+  }
+return max
+}
+const data =[12,34,78,34,54,23,21,41]
+const result=getMax(data)
+console.log(result);
+
+```
+### 5.Wood Quanty :
+```js
+function woodQuantity(tableqty,chairqty,bedqty){
+  const tableper = 5;
+  const chairper = 10;
+  const bedper = 15 ;
+  const tablecost = tableqty * tableper;
+  const chaircost = chairqty * chairper;
+  const bedcost = bedqty * bedper;
+  const totalwood = tablecost + chaircost + bedcost ;
+  return totalwood;
+}
+const data =woodQuantity(0,0,1)
+console.log(data);
+```
+### 6. Object to show min and max price show in product,
+```js
+const phones =[
+  {name : "iphone", price : 10000, color : "red"},
+  {name : "mi", price : 3000, color : "red"},
+  {name : "nokea", price : 4000, color : "red"}
+]
+function ChepestObject(phones){
+ let min =phones[0];
+ for(const phone of phones){
+  if(min.price > phone.price){
+    min.price = phone.price
+  }
+ }
+ return min
+}
+const data =ChepestObject(phones)
+console.log(data);
+
+```
 
 
 
