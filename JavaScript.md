@@ -70,7 +70,35 @@ console.log(arry.slice(2,6)); //index 2 to 6 all element cut
 console.log(arry.splice(4,2)); // 4 index to how much remove element(2)
 
  ```
-
+### 2.Array Traversal :
+```js
+ const friend =["Rahim","Karim","Mofis","teran"];
+//1.for of
+for(const num of friend){
+  console.log(num, "Islam");
+}
+//2.for
+for(let i=0; i<friend.length; i++){
+  console.log(friend[i]);  
+}
+//3.while
+let num = 0;
+while (num < friend.length) {
+  console.log(friend[num]);
+  num++  
+}
+//Revers
+const Revers = [];
+for(const num of friend){
+  Revers.unshift(num)
+}
+console.log(Revers);
+//sort
+const numbers = [2,34,3,56,9,1,44,7,87];
+const number_asc =[...numbers].sort(function(a, b){return a-b})
+const number_dsc =[...numbers].sort(function(a, b){return b-a})
+console.log(number_asc,number_dsc);
+```
 
 ## Module -19 Concept of loop :
 ### 1.for of
