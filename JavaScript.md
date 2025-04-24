@@ -177,6 +177,34 @@ for(const prop in person){ //for in use only object
   console.log(person[prop]); //show value
 }
 ```
+## Function : function name (p){} and name(); Recipe Details,
+### 1.Parameter and Argument :
+```js
+function add(num1,num2){
+  sum = num1+ num2
+ const show = `first number ${num1} and second number ${num2} sum total ${sum}`;
+ console.log(show);
+  return sum 
+}
+const result=add(2,3);
+console.log(result,"final");
+```
+### Condition and return
+```js
+ function Dribble (num1,Double){
+  if(Double == true){
+    const result=num1*2
+    return result
+  }else{
+    const result = num1 *3
+    return result
+  }
+}
+const show =Dribble(2,false)
+const shown =Dribble(2,true)
+console.log(show,shown);
+
+```
 
 
 
