@@ -178,6 +178,7 @@ for(const prop in person){ //for in use only object
 }
 ```
 ## Function : function name (p){} and name(); Recipe Details,
+#### a block of code ,a set of statements
 ### 1.Parameter and Argument :
 ```js
 function add(num1,num2){
@@ -189,7 +190,7 @@ function add(num1,num2){
 const result=add(2,3);
 console.log(result,"final");
 ```
-### Condition and return
+### 2. Condition and return
 ```js
  function Dribble (num1,Double){
   if(Double == true){
@@ -205,6 +206,22 @@ const shown =Dribble(2,true)
 console.log(show,shown);
 
 ```
+### 3.Array 
+```js
+function SumOfTotal(data){
+  let sum =0
+  for(const item of data){
+    console.log(item);
+    sum =sum+item
+  }
+  return sum;
+}
+const data =[30,40,50,70,12]
+const sent =SumOfTotal(data);
+console.log(sent);
+
+```
+### 3. Object
 
 
 
