@@ -73,6 +73,26 @@ console.log(arry.splice(4,2)); // 4 index to how much remove element(2)
 
 
 ## Module -19 Concept of loop :
+### 1.for of
+```js
+const numbers = [2,3,5,1,6,7,4,2]
+for(const num of numbers){
+  let  num1 = num + 3
+  console.log(num1); 
+}
+//
+for(let i=0; i<=10; i++){
+  console.log(i); 
+}
+```
+### 2.while
+```js
+let num =1
+while(num<=10){
+  console.log("invest 6 day per single day");
+  num++
+}
+```
 
 
 
