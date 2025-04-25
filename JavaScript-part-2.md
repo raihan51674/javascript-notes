@@ -32,7 +32,7 @@ for(const li of somelist){
 const placeList =document.getElementById("places-list")
 //2.what to be add
 const li = document.createElement("li")
-li.innerHTML = "Akta new li added";
+li.innerHTML = `<h1>Akta new li added</h1>`
 //3 .add the child
 placeList.appendChild(li)
 
@@ -44,4 +44,6 @@ for (const li of styleAdd) {
 }
 console.log(styleAdd);
 ```
+
+## Bom :
 
