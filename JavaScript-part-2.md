@@ -20,6 +20,28 @@ const TextChange = document.getElementById("title")
  const data = TextChange.innerText ="This a Big Data Information"
  console.log(data);
  
+//id use # and class use .
+const somelist =document.querySelectorAll("#section")
+for(const li of somelist){
+  console.log(li.innerText);
+}
+```
+### style and element add :
+```js
+// 1.where to add
+const placeList =document.getElementById("places-list")
+//2.what to be add
+const li = document.createElement("li")
+li.innerHTML = "Akta new li added";
+//3 .add the child
+placeList.appendChild(li)
 
+const styleAdd = document.getElementsByClassName("classUse")
+for (const li of styleAdd) {
+  li.style.backgroundColor = "red";
+  li.style.padding = "10px"
+  li.style.border ="2px solid steelblue"
+}
+console.log(styleAdd);
 ```
 
