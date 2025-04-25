@@ -45,5 +45,24 @@ for (const li of styleAdd) {
 console.log(styleAdd);
 ```
 
-## Bom :
+## Event :
+```js
+//1.<button onclick="shawName()">Show Name</button>
+function shawName(){
+const addElement =document.getElementById("places-list")
+const create = document.createElement("h1");
+create.innerHTML ="Raihan Khan"
+addElement.append(create)
+}
+//2.<button id="btn-click"> btn</button>
+const btnClick = document.getElementById("btn-click")
+btnClick.onclick = function make(){
+  document.body.style.backgroundColor ="gray"
+}
+// most use 3.<button id="btn-make"></button>
+const Clickbtn = document.getElementById("btn-make").addEventListener("click", function ButtonCall(){
+  document.body.style.backgroundColor ="red"
+})
+
+```
 
