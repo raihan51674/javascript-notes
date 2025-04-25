@@ -319,6 +319,96 @@ const data =ChepestObject(phones)
 console.log(data);
 
 ```
+### 7.Shopping cart :
+```js
+const products =[
+  {name : "mobile" , price : 2000,Quantity : 3},
+  {name : "laptop" , price : 3000, Quantity : 2},
+  {name : "calculator" , price : 200, Quantity : 5}
+]
+function ShoppingTotal(product){
+  let TotalPrice = 0;
+  for(const item of product){
+    const perProductCost = item.price * item.Quantity;
+    TotalPrice = TotalPrice + perProductCost
+  }
+  return TotalPrice
+}
+const total =ShoppingTotal(products)
+console.log(total);
+
+```
+### 8. Layer a Layer a Discount
+```js
+function LayerDiscount(quantity){
+  const first100Price =100;
+  const second100Price =90;
+  const abovePrice =70;
+  if(quantity <=100){
+    const total = quantity * first100Price;
+    return total
+  }else if(quantity <=200){
+    const first100Total = 100 *first100Price;
+    const reamingQuantity = 100 -quantity;
+    const reamingTotal = reamingQuantity * second100Price;
+    const total = first100Total + reamingTotal
+    return total
+  }else{
+    const second100Total = 200 * abovePrice;
+    const reamingQuantity = 200 -quantity;
+    const reamingTotal = reamingQuantity * abovePrice
+    const total =second100Total + reamingTotal
+    return total
+  }
+}
+const total =LayerDiscount(250)
+console.log(total);
+
+
+```
+### 9.Simple Calculator
+```js
+function add(a , b){
+  return a + b
+}
+function substrc(a , b){
+  return a - b
+}
+function multiply(a , b){
+  return a * b
+}
+function divide(a , b){
+  return a / b
+}
+function Calulator (a, b, operator){
+  if(operator == "add"){
+    return add(a,b)
+  }
+  else if(operator == "sub"){
+    return substrc(a,b)
+  }
+  else if(operator == "mul"){
+    return multiply(a,b)
+  }
+  else if(operator == "div"){
+    return divide(a,b)
+  }
+}
+const result = Calulator(2,4, "add")
+console.log(result);
+```
+### 10. Default answer validation
+```js
+function multiply (num1, num2){
+  if(typeof mum1 !== "number" && typeof num2 !== "number" ){
+    return "Please provide number"
+  }
+  const mul = num1 * num2;
+  return mul
+}
+const result= multiply(3, "dn")
+console.log(result);
+```
 
 
 
