@@ -159,13 +159,16 @@ const drink ="this water";
   console.log("mele nai");
  }
 ```
-### 2. Object : student explain,
+### 2. Object : Person explain,
 ```js
 const person ={
   profession : "Developer",
   salary : 2500,
   maried : false,
   places : ["cox","sajek","radison"],
+  act : function(){
+   console.log("Hello i am function")
+  }
   unique :{
     color : "blue",
     result :{
@@ -179,6 +182,7 @@ console.log(person["places"]);
 console.log(person.places[2]);
 console.log(person.unique.color);
 console.log(person.unique.result.gpa);
+console.log(person.act())
 console.log(Object.keys(person)); //show porparty
 console.log(Object.values(person)); //all value 
 for(const prop in person){ //for in use only object
