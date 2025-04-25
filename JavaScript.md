@@ -235,6 +235,25 @@ console.log(sent);
 
 ```
 ## 22. Simple Problem-1
+### *Product search
+```js
+const products =[
+  {id: 1, name : "xiami phone update model", price: 3000},
+  {id: 2, name : "iphone phone new model in market", price: 3000},
+  {id: 3, name : "opp phone m3 model", price: 3000}
+]
+function MacthedName(products, search){
+  let matched =[]
+  for(const product of products){
+    if(product.name.toLowerCase().includes(search.toLowerCase())){
+      matched.push(product)
+    }
+  }
+return matched
+}
+const result = MacthedName(products, "opp")
+console.log(result);
+```
 ### 1.conveter inch to feet:
 ```js
 function InchiToFeetConveter(inch){
