@@ -65,4 +65,22 @@ const Clickbtn = document.getElementById("btn-make").addEventListener("click", f
 })
 
 ```
+### Comment box :
+```js
+//1.<div id="comment-publish"></div> child <p class="classUse">ADD</p>
+//2.<textarea name="" id="comment-field" cols="60" rows="10"></textarea>
+//3.<button id="comment-btn">Comment post</button>
+document.getElementById("comment-btn").addEventListener("click", function() {
+  // console.log("hello"); 
+  const commentFil = document.getElementById("comment-field");
+  const newComment = commentFil.value;
+  // console.log(newComment);
+  const commentPublish =document.getElementById("comment-publish")
+  const createComment =document.createElement("p")
+   createComment.classList.add("classUse")
+   createComment.innerText =newComment
+  commentPublish.append(createComment)
+});
+
+```
 
