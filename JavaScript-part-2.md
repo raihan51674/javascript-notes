@@ -70,17 +70,18 @@ const Clickbtn = document.getElementById("btn-make").addEventListener("click", f
 //1.<div id="comment-publish"></div> child <p class="classUse">ADD</p>
 //2.<textarea name="" id="comment-field" cols="60" rows="10"></textarea>
 //3.<button id="comment-btn">Comment post</button>
-document.getElementById("comment-btn").addEventListener("click", function() {
-  // console.log("hello"); 
-  const commentFil = document.getElementById("comment-field");
-  const newComment = commentFil.value;
-  // console.log(newComment);
-  const commentPublish =document.getElementById("comment-publish")
-  const createComment =document.createElement("p")
-   createComment.classList.add("classUse")
-   createComment.innerText =newComment
-  commentPublish.append(createComment)
-});
+document.getElementById("btn").addEventListener("click",function(event){
+  event.preventDefault(); 
+  const Cbox =document.getElementById("comment-box")
+  const valueT =Cbox.value.trim(); 
+  const publish=document.getElementById("comment-publish")
+  const create =document.createElement("p")
+  create.classList.add("pdesign") //use class name
+  create.innerText =valueT
+  publish.appendChild(create);
+  Cbox.value=""
+})
 
 ```
+
 
