@@ -100,6 +100,21 @@ const mapping=number.map((value)=>{
    return value+1
 })
 console.log(mapping);
+
+const products =[
+  {id :1, name: "iphone", color: "black", price:1100},
+  {id :2, name: "samsange", color: "gold", price:1500},
+  {id :3, name: "iphone", color: "black", price:5000},
+  {id :4, name: "Nokia", color: "gold", price:1000},
+]
+//iphone ber kore 100 taka barai dici
+const newProdut=products.map(p=>{
+  if(p.name=="iphone"){
+    p.price = p.price + 100
+  }
+  return p
+})
+console.log(newProdut);
 ```
 ### 3. find() and filter() and forEach() fau
 ```js
