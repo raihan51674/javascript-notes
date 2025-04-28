@@ -25,7 +25,7 @@ console.log(add());
 const squre=x=>x*x
 squre(10)
 ```
-### 2.Spread Operator and Destructure :(arry element exces not arry)
+### 2.Spread Optional Chaining and Destructure :(arry element exces not arry)
 ```js
 //Spread oparator
 const friend=["Raihan","siam","mukit"]
@@ -48,6 +48,20 @@ console.log(age,name);
 const friend=["Hero Alom",{name :"raihan"},"hena"]
 const [nayok,obj,Name]=friend //must sequenc follow
 console.log(nayok);
+
+//Optional Chaining
+const person={
+  name:"hena",
+  age: 34,
+  status: "Not Found",
+  details:{
+    job :"yess",
+    name : "mina",
+    isValited : true,
+  }
+}
+console.log(person?.details?.job); //or
+console.log(person["details"]["job"]); //use 1,true exces
 
 ```
 
@@ -75,3 +89,39 @@ for(let key in person){
 }
 
 ```
+## 2.ES-6 Concept :
+### 1.Map (not use obj)
+```js
+const number =[2,3,4,54,23,67,6,5,4,78,89,5]
+const mapp=number.map(value=>value+1)
+console.log(mapp);
+//{} use must be return 
+const mapping=number.map((value)=>{
+   return value+1
+})
+console.log(mapping);
+```
+### 3. find() and filter() and forEach() fau
+```js
+//Filter and Find and forEach (not return)
+const products =[
+  {id :1, name: "iphone", color: "black", price:1100},
+  {id :2, name: "samsange", color: "gold", price:1500},
+  {id :3, name: "xoami", color: "black", price:5000},
+  {id :4, name: "Nokia", color: "gold", price:1000},
+]
+//not return value fau
+products.forEach(product=>{
+  if(product.color === "gold"){
+    console.log(product);
+  }
+})
+//find out product
+const findProduct =products.find(product=>product.id===4)
+console.log(findProduct);
+//filter category show
+const FilterProduct= products.filter(product=>product.price >=1500)
+console.log(FilterProduct);
+
+```
+
