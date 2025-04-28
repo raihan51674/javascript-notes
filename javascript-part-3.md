@@ -1,4 +1,4 @@
-# ES6 (Interview)
+# 📚 JES-6 Notes (Interview)
 
 ## Basic ES6
 ### let (changing), const(only value change)
@@ -37,3 +37,18 @@ console.log(Math.max(...numbers));
 
 ```
 ### Destructure :
+```js
+//destructure obj and array
+const person ={
+  name : "hena",
+  age :23,
+  friends : ["raihan","rifat","siam"],
+  status :"Not Found"
+}
+const {name,status,age,friends}=person
+console.log(age,name);
+//Array
+const friend=["Hero Alom",{name :"raihan"},"hena"]
+const [nayok,obj,Name]=friend //must sequenc follow
+console.log(nayok);
+```
