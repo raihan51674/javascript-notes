@@ -265,7 +265,7 @@ handleUser()
 
 
 
-## LocalStroage :
+## 1.LocalStroage :
 ```js
 //localstorage
 const age =10;
@@ -291,7 +291,7 @@ const convertObject=JSON.parse(data)
 console.log(convertObject);
 
 ```
-### add to cart save localStorage 
+### 2. add to cart save localStorage 
 ```js
 {/* <input id="productName" type="text" placeholder="product name">
 <input id="QuantityName" type="text" placeholder="product Quantity">
@@ -342,4 +342,33 @@ const saveProdutLocalStorage=(product,quantity)=>{
 DisplayProductFromLocalStorage()
 
 ```
+
+## JavaScript Debugging step : 1.error identification 2. error analaysis 3.fix and vaidation
+## Debugging tools : 1.console korbo 2.Breakpoint 3.Debugger keyword (code line use: debugger; ) 4.Backtracking (where to data also check console.log) 5.Forword traking
+### 1.Syntax Error: (missig anythin) ex-",}
+#### 1.Missing Quote, "
+#### 2.Unmatched parenthess, )
+#### 3.Incorrect Keyword,  i 
+#### 4.Unexpected error,  const for= 0 
+#### 5.Unexpected end,  } 
+#### 6.Unexpected Identifier, age : "23" 
+
+### 2. Type Error :( data type operation missing )
+```js
+let number = 43
+number()
+
+let user;
+user.name
+```
+### 3.Reference Error : ( block scope error)
+```js
+const sum=()=>{
+const result=2+3
+}
+console.log(result)
+```
+### 4.Common Causes :
+#### 1.Undecelar variable
+#### 2.variable out of scope
 
