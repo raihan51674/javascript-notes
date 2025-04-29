@@ -258,5 +258,8 @@ const handleUser=async()=>{
 handleUser()
 ```
 ## About JavaScript
-### JavaScript is a highly abstracted programming language or JIT(just in time) compailer language or multi-paradigm(different verient use) or proto-typed-based or dynamically typed and Garbage collection
+### 1.JavaScript is a highly abstracted programming language or JIT(just in time) compailer language or multi-paradigm(different verient use) or proto-typed-based or dynamically typed and Garbage collection
+### 2. v8 engine use by chrome
+### 3.Execution context (store 2 way global first and then function) and call stack use
+### 4.single threaded (only one task at a time) 
 
