@@ -116,7 +116,7 @@ const newProdut=products.map(p=>{
 })
 console.log(newProdut);
 ```
-### 3. find() and filter() and forEach() fau
+### 2. find() and filter() and forEach() fau
 ```js
 //Filter and Find and forEach (not return)
 const products =[
@@ -138,5 +138,66 @@ console.log(findProduct);
 const FilterProduct= products.filter(product=>product.price >=1500)
 console.log(FilterProduct);
 
+```
+### 3.0 Premative (akta, String) and Non Premative(onk,obj)-not compare js
+### 3.1 Non-Zero-Value , 0 ,Null, Undefined =>tisu
+### 3.2 Truthy(all) and Falsey (0,null,"",undefined,NaN,false) Values
+### 3.3 == (value check) and === (data type check)-use
+### 3.4 Block Scope and Global Scope and Hoisting(var use exces)
+### 3.5 Closure (two function with relation)
+### 3.6 CallBack Function (function inside to function call)
+### 3.7 Function Arguments and pass by Reference and pss by value
+### 3.8 Pre/Post increment and Decrement
+```js
+//Closure
+function sum(){
+  let counter =0
+  return function (){
+    counter ++
+    console.log(counter);
+  }
+}
+const result=sum() //new
+result()
+result()
+result()
+const result2 =sum() //new
+result2()
+result2()
+result() //again
+
+//callback function
+function gotak(patri, name){
+  patri(name)
+}
+const patri=(name)=>{
+  console.log(`patri khuje paici josna : ${name}`);
+}
+const patri2=(name)=>{
+  console.log(`patri khuje paici bela sokina : ${name}`);
+}
+gotak(patri, "masud")
+gotak(patri2, "Hero Alom")
+
+//function arguments
+function sum(){
+  const arry =[...arguments]
+  console.log(arry);
+}
+sum(10,20,30,40)
+//pass by value and pass by reference
+const person={name:"raihan",age:67}
+function sum(obj){
+  obj.name ="Hero Alom"
+}
+console.log(person); //no change name
+sum(person)
+console.log(person); //change name
+
+//True and false value
+const name ="raihan"
+if(!name){ //false return
+}
+if else(!!name) //true return
 ```
 
