@@ -200,4 +200,21 @@ if(!name){ //false return
 }
 if else(!!name) //true return
 ```
+## API and JSON :
+### JSON convert:
+```js
+//JSON
+const person={
+  name :"raihan",
+  age:"30",
+  friends:["karim","jarim"],
+  status :true
+}
+//convert json
+const ConvertSjon=JSON.stringify(person)
+console.log(ConvertSjon);
+//convert obj
+const ConvertObj=JSON.parse(ConvertSjon)
+console.log(ConvertObj);
+```
 
