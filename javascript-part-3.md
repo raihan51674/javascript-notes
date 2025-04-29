@@ -257,4 +257,6 @@ const handleUser=async()=>{
 }
 handleUser()
 ```
+## About JavaScript
+### JavaScript is a highly abstracted programming language or JIT(just in time) compailer language or multi-paradigm(different verient use) or proto-typed-based or dynamically typed and Garbage collection
 
