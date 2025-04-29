@@ -263,3 +263,83 @@ handleUser()
 ### 3.Execution context (store 2 way global first and then function) and call stack use
 ### 4.single threaded (only one task at a time) 
 
+
+
+## LocalStroage :
+```js
+//localstorage
+const age =10;
+localStorage.setItem("myage",age)
+const show=localStorage.getItem("myage")
+console.log(show);
+//only one delate
+localStorage.removeItem("myage")
+//all save delate
+localStorage.clear()
+//Add object in localStorage
+const handleStorage=()=>{
+  const person={
+    name :"raihan",
+    age : 10,
+    friends :["rakib","rahim"]
+  }
+  const convertString =JSON.stringify(person)
+  localStorage.setItem("object",convertString)
+}
+const data =localStorage.getItem("object")
+const convertObject=JSON.parse(data)
+console.log(convertObject);
+
+```
+### add to cart save localStorage 
+```js
+{/* <input id="productName" type="text" placeholder="product name">
+<input id="QuantityName" type="text" placeholder="product Quantity">
+<button onclick="handleAddToCard()">Add to Card</button>
+<div id="show"> */}
+const handleAddToCard=()=>{
+  const ProductName=document.getElementById("productName")
+  const QuantityName=document.getElementById("QuantityName")
+  const Product=ProductName.value 
+  const Quantity=QuantityName.value ;
+  //show product in display
+  DisplayShow(Product, Quantity);
+  //save product localstorage
+  saveProdutLocalStorage(Product,Quantity)
+  //add click hide input field
+  ProductName.value=""
+  QuantityName.value=""
+}
+const DisplayShow=(product, quantity)=>{
+  const Show=document.getElementById("show")
+  const li=document.createElement("li")
+  li.innerHTML=`Product Name: ${product} and Quantity: ${quantity}`
+  Show.appendChild(li)
+}
+//check condition have a product in localstorage
+const getProductFromLocalStorage=()=>{
+  let cart={}
+  const getProduct =localStorage.getItem("cart")
+  if(getProduct){
+    cart =JSON.parse(getProduct)
+  }
+  return cart
+}
+//save product display show
+const DisplayProductFromLocalStorage=()=>{
+  const Products=getProductFromLocalStorage()
+  for(const product in Products){
+    DisplayShow(product,Products[product])
+  }
+}
+//product save in localstorage
+const saveProdutLocalStorage=(product,quantity)=>{
+  const cart =getProductFromLocalStorage();
+  cart[product]=quantity
+  const cartString=JSON.stringify(cart)
+  localStorage.setItem("cart",cartString)
+}
+DisplayProductFromLocalStorage()
+
+```
+
