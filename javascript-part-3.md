@@ -201,7 +201,8 @@ if(!name){ //false return
 if else(!!name) //true return
 ```
 ## API and JSON :
-### JSON convert:
+### 1.JSON convert and fetch data
+
 ```js
 //JSON
 const person={
@@ -216,5 +217,44 @@ console.log(ConvertSjon);
 //convert obj
 const ConvertObj=JSON.parse(ConvertSjon)
 console.log(ConvertObj);
+
+//data fetching
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(res=>res.json())
+.then(data=>console.log(data[1]))
+
+//<button onclick="LoadData()">Load data</button>
+//<div id="user">
+const LoadData=()=>{
+  fetch("https://jsonplaceholder.typicode.com/users")
+  .then(res=>res.json()).then(data=>DisplayData(data))
+}
+const DisplayData=(users)=>{
+  const FrData=document.getElementById("user")
+  for(const user of users){
+    const div=document.createElement("div")
+    // div.classList.add("card")
+    div.innerHTML=`
+    <h1>${user.name}</h1>
+    <h3>${user.email}</h3>
+    <h4>${user?.address?.city}</h4>
+    `
+    FrData.appendChild(div)
+  }
+}
+
+```
+### 2.Async Await :
+```js
+const handleUser=async()=>{
+  try {
+    const Response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const data = await Response.json()
+    console.log(data);
+  } catch (error) {
+    console.log(`Error show  ${error}`); 
+  }
+}
+handleUser()
 ```
 
