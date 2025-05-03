@@ -4,12 +4,11 @@
 //1.Module-17 Introduction to JavaScript
 //2.Module-18 Concept of Conditions
 //3.Module -18.5 Concept of Array
-//4.2.Array Traversal
-//5.Module -19 Concept of loop
-//6.Module-20 String & Objects
-//7. Function
-//8.ondition and return
-//9.problem 10 ta
+//4.Module -19 Concept of loop
+//5.Module-20 String & Objects
+//6. Function
+//7.ondition and return
+//8.problem 10 ta
 ```
 
 # Module-17 Introduction to JavaScript
