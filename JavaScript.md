@@ -1,5 +1,16 @@
 # $\textcolor{yellow}{ JavaScript\ .\}$
 
+```js
+//1.Module-17 Introduction to JavaScript
+//2.Module-18 Concept of Conditions
+//3.Module -18.5 Concept of Array
+//4.2.Array Traversal
+//5.Module -19 Concept of loop
+//6.Module-20 String & Objects
+//7. Function
+//8.ondition and return
+//9.problem 10 ta
+```
 
 # Module-17 Introduction to JavaScript
 ### 1. JavaScript created by Brendan Eich only 10 Days,High level language,pretty mush everything else
@@ -435,33 +446,3 @@ console.log(result);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-#### $\textcolor{orange}{ Var\ :\}$
-var is function or global scope and is hoisted to the top of its scope.
-```js
-var x = 10;
-if (true) {
-    var x = 20;
-}
-console.log(x); // 20
-```
